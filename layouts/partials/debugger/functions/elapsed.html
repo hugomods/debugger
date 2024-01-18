@@ -1,0 +1,5 @@
+{{- $elapsed := "" }}
+{{- with .Store.Get "debugger:started_at" }}
+  {{- $elapsed = time.Now.Sub .  }}
+{{- end }}
+{{- return $elapsed }}

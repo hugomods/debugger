@@ -1,0 +1,5 @@
+{{- $opts := dict
+  "targetPath" "css/debugger.css"
+}}
+{{- $css := resources.Get "mods/debugger/scss/index.scss" | toCSS $opts }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}">

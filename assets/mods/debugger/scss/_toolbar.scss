@@ -1,0 +1,23 @@
+.debugger-toolbar {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.debugger-toolbar-item-value {
+  background: var(--debugger-primary-color);
+  color: white;
+  border-radius: 0.25rem;
+  padding: 0.125rem 0.25rem;
+}
+
+.debugger-toolbar-item-value-none {
+  background: #dbe0e5;
+  user-select: none;
+}
+
+.debugger-toolbar-time {
+  .debugger-toolbar-item-value {
+    background: green;
+  }
+}

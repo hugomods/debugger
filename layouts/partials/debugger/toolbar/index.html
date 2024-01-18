@@ -1,0 +1,7 @@
+<div class="debugger-toolbar">
+  {{ partial "debugger/toolbar/toggle" . }}
+  {{ partial "debugger/toolbar/time" . }}
+  {{- range slice "kind" "layout" "type" }}
+    {{ partial "debugger/toolbar/page-var" . }}
+  {{- end }}
+</div>

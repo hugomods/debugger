@@ -1,0 +1,5 @@
+{{- $opts := dict
+  "targetPath" "js/debugger.js"
+}}
+{{- $js := resources.Get "mods/debugger/js/index.ts" | js.Build $opts }}
+<script src="{{ $js.RelPermalink }}" defer></script>

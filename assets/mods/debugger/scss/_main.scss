@@ -1,0 +1,22 @@
+.debugger {
+  --debugger-primary-color: #ff4088;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #f2f4f7;
+  border-right: 1px solid #f2f4f7;
+  padding: .5rem;
+  z-index: 1000;
+  overflow: hidden;
+
+  &.hidden {
+    width: auto;
+
+    .debugger-toolbar-item {
+      display: none;
+    }
+  }
+}
