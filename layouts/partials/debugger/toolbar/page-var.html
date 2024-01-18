@@ -1,0 +1,15 @@
+{{- $name := . }}
+{{- $value := "" }}
+{{- if eq $name "kind" }}
+  {{- $value = page.Kind }}
+{{- else if eq $name "layout" }}
+  {{- $value = page.Layout }}
+{{- else if eq $name "type" }}
+  {{- $value = page.Type }}
+  {{- end }}
+<div class="debugger-toolbar-item debugger-toolbar-{{ $name }}">
+  <span class="debugger-toolbar-item-label">{{ title $name }}</span>
+  <span class="debugger-toolbar-item-value{{ cond (not $value) ` debugger-toolbar-item-value-none` `` }}">
+    {{- default "none" $value -}}
+  </span>
+</div>

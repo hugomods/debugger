@@ -1,0 +1,12 @@
+{{- $elapsed := partial "debugger/functions/elapsed" . }}
+{{- with $elapsed }}
+  {{- $ms := div $elapsed.Microseconds 1000.0 }}
+  <div class="debugger-toolbar-item debugger-toolbar-time">
+    <span class="debugger-toolbar-item-label">
+      {{- i18n "debugger_time" | default "Time" -}}
+    </span>
+    <span class="debugger-toolbar-item-value">
+      {{- $ms | printf "%.2fms" -}}
+    </span>
+  </div>
+{{- end }}
