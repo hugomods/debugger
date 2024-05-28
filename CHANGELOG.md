@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/hugomods/debugger/compare/v0.1.1...v0.2.0) (2024-05-28)
+
+
+### Features ✨
+
+* **i18n:** add Vietnamese translations ([48f02d0](https://github.com/hugomods/debugger/commit/48f02d051dc875edbebc18096e975c7bde3dfad8))
+
 ## [0.1.1](https://github.com/hugomods/debugger/compare/v0.1.0...v0.1.1) (2024-01-20)
 
 
