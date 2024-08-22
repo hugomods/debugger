@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/hugomods/debugger/compare/v0.2.0...v0.3.0) (2024-08-22)
+
+
+### Features ✨
+
+* add the debugger.sass_transpiler parameter, default to dartsass ([f636720](https://github.com/hugomods/debugger/commit/f63672068d6ac60bce8e5b0da796aa73eb08fc8f))
+
 ## [0.2.0](https://github.com/hugomods/debugger/compare/v0.1.1...v0.2.0) (2024-05-28)
 
 
