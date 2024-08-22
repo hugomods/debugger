@@ -10,3 +10,4 @@ weight = 1
 [params.hugopress.modules.debugger.hooks.body-end]
 
 [params.debugger]
+sass_transpiler = "dartsass"

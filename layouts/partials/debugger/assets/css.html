@@ -1,5 +1,6 @@
 {{- $opts := dict
   "targetPath" "css/debugger.css"
+  "transpiler" (default "dartsass" site.Params.debugger.sass_transpiler)
 }}
 {{- $css := resources.Get "mods/debugger/scss/index.scss" | toCSS $opts }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}">
